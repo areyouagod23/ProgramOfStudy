@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class ProgramOfStudy implements Iterable<Course>, Serializable {
-    private List<Course> list;
+    private final List<Course> list;
 
     public ProgramOfStudy() {
         list = new LinkedList<>();
@@ -68,9 +68,9 @@ public class ProgramOfStudy implements Iterable<Course>, Serializable {
         ProgramOfStudy pos = new ProgramOfStudy();
 
         // Adding sample courses
-        pos.addCourse(new Course("CS", 101));
-        pos.addCourse(new Course("Math", 201));
-        pos.addCourse(new Course("Physics", 301));
+        pos.addCourse(new Course("DCIT301", 101));
+        pos.addCourse(new Course("DCIT304", 201));
+        pos.addCourse(new Course("DCIT306", 301));
 
         // Displaying courses
         System.out.println("Program of Study:");
