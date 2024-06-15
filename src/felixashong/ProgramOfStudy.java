@@ -85,7 +85,7 @@ public class ProgramOfStudy implements Iterable<Course>, Serializable {
         }
 
         // Loading from file
-        
+
         try {
             ProgramOfStudy loadedPOS = ProgramOfStudy.load("program_of_study.ser");
             System.out.println("Loaded Program of Study:");
