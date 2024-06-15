@@ -6,6 +6,7 @@ import java.util.*;
 public class ProgramOfStudy implements Iterable<Course>, Serializable {
     private final List<Course> list;
 
+
     public ProgramOfStudy() {
         list = new LinkedList<>();
     }
